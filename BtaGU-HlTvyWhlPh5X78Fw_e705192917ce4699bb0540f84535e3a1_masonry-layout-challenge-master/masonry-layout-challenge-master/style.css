@@ -1,0 +1,19 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container for the blocks */
+.container {
+    width: 620px; /* 6 columns * 100px width + some margin */
+    margin: 20px auto;
+}
+
+/* Each block styling */
+.block {
+    float: left;
+    width: 100px;
+    margin: 5px;
+    background-color: #3d1e37;
+}

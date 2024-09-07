@@ -1,0 +1,53 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.poem {
+    padding: 20px;
+    max-width: 600px;
+    text-align: left;
+}
+
+.poem h1 {
+    color: #3c60a3;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.poem p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+    color: black;
+}
+
+.blue-text {
+    color: #3c60a3;
+    font-weight: bold;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.mid {
+    text-align: center;
+    font-style: italic;
+}
+
+.italic {
+    font-style: italic;
+}

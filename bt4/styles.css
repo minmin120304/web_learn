@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 330px;
+    background-color: #ddd;
+    margin-left: 30px;
+    padding-bottom: 10px;
+}
+
+li {
+    padding-top: 10px;
+    margin-top: 10px;
+    padding-right: 15px;
+}
+
+li::marker {
+    font-size: 25px;
+    color: #942bc8;
+}
+
+.content-item {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    color: #525252;
+}
+
+.time {
+    color: palevioletred;
+}
