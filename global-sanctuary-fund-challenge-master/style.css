@@ -251,3 +251,84 @@ header {
 .text2 {
     margin-left: 656px;
 }
+
+.login {
+    background-color: #090909;
+    color: #fff;
+    padding: 14px 26px;
+    margin-bottom: 10px;
+}
+
+.line {
+    height: 1px;
+    background-color: #fff;
+    width: 100%;
+    margin: 14px 0 28px 0;
+}
+
+.login-btn {
+    justify-content: right;
+    display: flex;
+    
+}
+
+.login-btn a {
+    background-color: #d55c19;
+    text-decoration: none;
+    color: #fff;
+    padding: 6px 14px;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+.login__list {
+    list-style: none;
+    font-size: 1.4rem;
+
+}
+
+.login__list-item {
+    margin: 6px 0;
+}
+
+.contact {
+    margin: 10px 10px;
+    display: flex;
+    gap: 20px;
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+}
+
+.contact__logo {
+
+}
+
+.contact__address {
+
+}
+
+.contact__address > h5 {
+    padding-bottom: 10px;
+}
+
+.contact__method {
+    max-width: fit-content;
+    width: auto;
+}
+
+.icon-list {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    padding-top: 10px;
+    max-width: fit-content;
+    width: auto;
+}
+
+.icon-list > img {
+    width: 5%;
+}
+
+.contact__about {
+
+}
