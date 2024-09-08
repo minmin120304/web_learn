@@ -254,14 +254,15 @@ header {
 
 .login {
     background-color: #090909;
-    color: #fff;
+    color: #ccc;
     padding: 14px 26px;
-    margin-bottom: 10px;
+    margin: 0 10px 10px;
+    height: auto;
 }
 
 .line {
     height: 1px;
-    background-color: #fff;
+    background-color: #ccc;
     width: 100%;
     margin: 14px 0 28px 0;
 }
@@ -288,19 +289,22 @@ header {
 }
 
 .login__list-item {
-    margin: 6px 0;
+    margin: 14px 0;
 }
 
 .contact {
-    margin: 10px 10px;
-    display: flex;
-    gap: 20px;
+    margin: 20px 95px 20px 20px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 40px;
     font-size: 1.4rem;
     letter-spacing: 0.5px;
+    color: #090909;
 }
 
 .contact__logo {
-
+    justify-content: center;
+    display: flex;
 }
 
 .contact__address {
@@ -308,7 +312,7 @@ header {
 }
 
 .contact__address > h5 {
-    padding-bottom: 10px;
+    padding-bottom: 16px;
 }
 
 .contact__method {
@@ -319,16 +323,50 @@ header {
 .icon-list {
     display: flex;
     list-style: none;
-    gap: 10px;
-    padding-top: 10px;
+    gap: 30px;
+    padding-top: 16px;
     max-width: fit-content;
     width: auto;
 }
 
 .icon-list > img {
-    width: 5%;
+    width: 12%;
 }
 
 .contact__about {
+    line-height: 28px;
+}
 
+.wide1 {
+    grid-column: span 1;
+}
+
+.wide2 {
+    grid-column: span 2;
+}
+
+.wide3 {
+    grid-column: span 3;
+}
+
+.landscape2 {
+    grid-column: span 4;
+}
+
+.policy_link_list {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    gap: 30px;
+}
+.policy_link_list > a {
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+.owner {
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+    margin-bottom: 50px;
 }
