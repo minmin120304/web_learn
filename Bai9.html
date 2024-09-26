@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .container {
+            margin: 10px auto;
+            width: 500px;
+            padding: 10px;
+            border: 1px solid gray;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            /* line-height: px; */
+            padding: 2px;
+            margin-bottom: 10px;
+            border-bottom: 1px gray solid;
+        }
+
+        .title {
+            font-size: 1.3rem;
+
+            color: rgb(186, 53, 75);
+            font-weight: bold;
+            align-self: center;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            align-items: center;
+        }
+
+        .link a {
+            text-decoration: none;
+            font-size: .9rem;
+            color: gray;
+            align-self: center;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 65% 1fr;
+            gap: 10px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 5px;
+        }
+
+        .content h1 {
+            font-size: 1.2rem;
+            color: rgb(186, 53, 75);
+            margin-bottom: 5px;
+        }
+
+        .content p {
+            font-size: .9rem;
+            color: gray;
+        }
+
+        .sub-content h1 {
+            font-weight: normal;
+            margin-bottom: 5px;
+            font-size: 1rem;
+            color: rgb(186, 53, 75);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <p class="title">Học</p>
+            <ul class="nav-links">
+                <li class="link"><a href="#">Tuyển sinh</a></li>
+                <li class="link"><a href="#">Du học</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="content item1">
+                <img src="a.jpg" alt="">
+                <h1>Nghệ An: 4/441 bài thi vào lớp 10 thay đổi điểm sau chấm phúc khảo</h1>
+                <p>
+                    Tại Kỳ tuyển sinh vào lớp 10 Nghệ An năm 2019, sau khi công bố kết quả, có 441 đươn đề nghị chấm
+                    phúc khảo của thí sinh. Kết quả có 4 bài thi được thay đổi điểm số và đều tăng so với điểm cũ.
+                </p>
+            </div>
+            <div>
+                <div class="sub-content ">
+                    <img src="a.jpg" alt="">
+                    <h1>Mốc thời gian thí sinh cần nhớ sau kì thi THPT quốc gia 2019</h1>
+                </div>
+                <div class="sub-content ">
+                    <img src="a.jpg" alt="">
+                    <h1>Có cần thiết phải chấm lại toàn bộ những bài thi Ngữ Văn có điểm cao?</h1>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>

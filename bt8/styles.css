@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    color: white;
+}
+
+nav {
+    height: 50px;
+    width: 100%;
+    background-color: #223771;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 60px;
+    align-items: center;
+}
+
+.left {
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+
+.right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: .85rem;
+}
+
+hr {
+    /* border: none; */
+    height: 30px;
+    border-right: 1px gray;
+}

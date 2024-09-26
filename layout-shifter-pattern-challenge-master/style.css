@@ -1,0 +1,143 @@
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ccc;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#content_all {
+    background-color: #fff;
+    margin: 0 20px 50px;
+    padding: 5px;
+}
+
+header > h1 {
+    justify-content: center;
+    display: flex;
+}
+
+.nav-bar {
+    background-color: #252625;
+}
+
+.header__navbar-list {
+    list-style: none;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    gap: 50px;
+}
+
+.header__navbar-list-item > a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.header__navbar-list-item > a:hover {
+    color: yellow;
+}
+
+.mobile-menu-btn {
+    display: none;
+}
+
+.content {
+
+}
+
+.content__list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.wide {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+.landscape {
+    grid-column: span 3;
+    grid-row: span 1;
+    margin-right: 4px;
+}
+
+.content__list-item {
+    border: 1px solid #000;
+    margin: 4px;
+}
+
+.item_title {
+    margin: 20px 4px;
+}
+
+.item_content {
+    margin: 10px 4px;
+    font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+    .content__list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .wide {
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+
+    .landscape {
+        grid-column: span 3;
+        grid-row: span 1;
+    }
+}
+
+@media (max-width: 550px) {
+    .content__list {
+        grid-template-columns: 1fr;
+    }
+
+    .wide, .landscape {
+        grid-column: 1;
+        grid-row: span 1;
+    }
+
+    .nav-bar {
+        position: absolute;
+        width: 86%;
+    }
+
+    .header__navbar-list {
+        display: block;
+        /* display: inline-block; */
+        /* position: absolute; */
+        /* width: 100%; */
+    }
+
+    .header__navbar-list > li {
+        /* display: none; */
+    }
+
+    .header__navbar-list-item:first-child {
+        /* display: block; */
+        /* position: absolute; */
+        /* left: 30px;
+        top: 45px; */
+    }
+
+    #mobile-menu {
+        
+        position: relative;
+        float: right;
+        top: -30px;
+        color: #fff;
+    }
+
+    #mobile-menu:hover .header__navbar-list {
+
+    }
+}
