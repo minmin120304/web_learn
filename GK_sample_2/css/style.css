@@ -74,17 +74,23 @@ img {
 }
 
 .list_link {
-    margin: 20px 0;
-    padding: 20px;
+    margin: 30px 0;
+    /* padding: 20px; */
 }
 
 .list_link > li {
-    /* border-top: solid #ccc 1px; */
+    position: relative;
+    left: 30px;
     padding: 20px;
-    margin: 10px;
+    margin: 20px 0;
 }
 
-.content1__col2_news > .list_link > a::marker {
+.list_link > li > a {
+    position: relative;
+    right: 20px;
+}
+
+.content1__col2_news > .list_link > li::marker {
     color: #0471ac;
     font-size: 26px;
 }
@@ -93,7 +99,7 @@ img {
     grid-column: span 1;
 }
 
-.content1__col3_news > .list_link > a::marker {
+.content1__col3_news > .list_link > li::marker {
     color: green;
-    font-size: 30px;
+    font-size: 26px;
 }
