@@ -1,0 +1,115 @@
+*,
+*::after,
+*::before {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul,
+li {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+header {
+    background-color: rgb(21, 21, 102);
+    display: flex;
+    justify-content: space-between;
+    align-list-item: center;
+    padding: 15px 50px;
+    color: white;
+    font-weight: bold;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    background-color: rgb(21, 21, 102);
+    color: white;
+    padding-inline: 50px;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5rem;
+
+}
+
+main>p {
+    width: 50%;
+    color: #ccc;
+}
+
+main img {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.drop-down {
+    position: relative;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes growth {
+    from {
+        transform: scale(var(--growth-from));
+    }
+
+    to {
+        transform: scale(var(--growth-to));
+    }
+}
+
+
+.drop-down:hover a {
+    color: orange;
+}
+
+.drop-down:hover .list-item {
+    opacity: 1;
+    display: block;
+}
+
+.drop-down .list-item {
+    position: absolute;
+    bottom: 0px;
+    transform: translateY(calc(100% + 20px));
+    width: max-content;
+    padding: 10px;
+    left: 0px;
+    background-color: white;
+    opacity: 0.0;
+    display: none;
+    animation: fadeIn ease-in 0.2s;
+}
+
+.list-item .item {
+    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-right: 50px;
+    font-weight: 100;
+    font-size: .9rem;
+    border-bottom: 1px rgb(177, 177, 177) solid;
+}

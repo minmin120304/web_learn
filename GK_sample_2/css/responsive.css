@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+    .content1 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .content1__col1_news, .content1__col2_news, .content1__col3_news {
+        grid-column: span 1;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        width: 100%;
+    }
+    .content1 {
+        grid-template-columns: 1fr;
+    }
+
+    .content1__col1_news, .content1__col2_news, .content1__col3_news {
+        grid-column: span 1;
+    }
+}
