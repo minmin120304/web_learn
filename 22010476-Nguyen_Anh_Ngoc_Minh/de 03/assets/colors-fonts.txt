@@ -1,0 +1,4 @@
+màu xanh da trời: #0783b2
+màu xanh lá cây: #65ba3e
+màu nền xám: #f2f2f2 hoặc rgb(238, 238, 238)
+font-family: Inter, sans-serif

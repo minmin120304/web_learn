@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giải phương trình</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <label for="loaiPT">Giải phương trình:</label>
+        <select id="loaiPT">
+            <option value="PT_b1">Phương trình bậc 1 (ax + b = 0)</option>
+            <option value="PT_b2">Phương trình bậc 2 (ax² + bx + c = 0)</option>
+        </select>
+
+        <div id="formPT_b1" class="form-container" style="display: none;">
+            <h3>Phương trình bậc 1 (ax + b = 0)</h3>
+            <label for="PT_b1A">Hệ số a</label>
+            <input type="number" id="HeSo_A" placeholder="Nhập hệ số a">
+            <label for="PT_b1B">Hệ số b</label>
+            <input type="number" id="HeSo_B" placeholder="Nhập hệ số b">
+            <button id="solvePT_b1">Giải PT bậc 1</button>
+            <div id="KQ_b1"></div>
+        </div>
+
+        <div id="formPT_b2" class="form-container" style="display: none;">
+            <h3>Phương trình bậc 2 (ax² + bx + c = 0)</h3>
+            <label for="HeSo_A">Hệ số a</label>
+            <input type="number" id="HeSo_A" placeholder="Nhập hệ số a">
+            <label for="HeSo_B">Hệ số b</label>
+            <input type="number" id="HeSo_B" placeholder="Nhập hệ số b">
+            <label for="HeSo_C">Hệ số c</label>
+            <input type="number" id="HeSo_C" placeholder="Nhập hệ số c">
+            <button id="solvePT_b2">Giải PT bậc 2</button>
+            <div id="KQ_b2"></div>
+        </div>
+    </div>
+
+    <script src="test.js"></script>
+</body>
+</html>
